@@ -4,9 +4,13 @@ import { LoginComponent } from './login.component';
 
 import { SharedModule } from '../shared/shared.module';
 
+import { userRoutes } from './user.routes';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   imports: [
-    SharedModule
+    SharedModule,
+    RouterModule.forChild(userRoutes)
   ],
   declarations: [
     LoginComponent
